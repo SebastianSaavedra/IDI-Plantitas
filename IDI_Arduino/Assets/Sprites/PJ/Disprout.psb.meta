@@ -1,0 +1,1974 @@
+fileFormatVersion: 2
+guid: b85f9c6dfdca0ee46ab4b6e3325037a6
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: pistiloSOMBRA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6959
+      y: 5034
+      width: 148
+      height: 238
+    spriteID: 36736a6934199c04bb9e78b01cfc238e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6009, y: 3592}
+  - name: SOMBRApistilosAGUA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4174
+      y: 5034
+      width: 125
+      height: 224
+    spriteID: ab20c2b674622ac41b1ee319247fdabd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3216, y: 3586}
+  - name: SOMBRApistilosFUEGO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4797
+      y: 5034
+      width: 125
+      height: 224
+    spriteID: ffd565aa5465c804bbb6268cdfa8dba1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3839, y: 3586}
+  - name: SOMBRApistilosAIRE
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4930
+      y: 5034
+      width: 125
+      height: 224
+    spriteID: e7e1481f960aca74b8972e18386e6196
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3972, y: 3586}
+  - name: SOMBRApistilosTIERRA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5063
+      y: 5034
+      width: 125
+      height: 224
+    spriteID: 175c8b96d4ab48d4091830764ab303b1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4105, y: 3586}
+  - name: SOMBRApistilosFUEGO+TIERRA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5196
+      y: 5034
+      width: 125
+      height: 224
+    spriteID: 23676837e0cf3ba40a345a958f4aa090
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4238, y: 3586}
+  - name: SOMBRApistilosAGUA+TIERRA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7872
+      y: 5386
+      width: 125
+      height: 224
+    spriteID: b340dc34be2d8d34f82657f993b89611
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6914, y: 3938}
+  - name: SOMBRApistilosAGUA+FUEGO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7872
+      y: 5618
+      width: 125
+      height: 224
+    spriteID: a952b3498f384244993bfceda9342cc2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6914, y: 4170}
+  - name: SOMBRApistilosAIRE+TIERRA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7872
+      y: 5850
+      width: 125
+      height: 224
+    spriteID: 3272a2dba18161a409d8093474f5d38c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6914, y: 4402}
+  - name: SOMBRApistilosAIRE+AGUA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8005
+      y: 5386
+      width: 125
+      height: 224
+    spriteID: 74b91ead6a6e9ce459c36ca48525f97a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7047, y: 3938}
+  - name: SOMBRApistilosAIRE+FUEGO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8005
+      y: 5618
+      width: 125
+      height: 224
+    spriteID: 28f85d7b89c9fc64c967306e90a425ee
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7047, y: 4170}
+  - name: SOMBRApistilos3ELEMENTOS
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8005
+      y: 5850
+      width: 125
+      height: 224
+    spriteID: ecc983be3b16ea14bbdb1764dbd20f8a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7047, y: 4402}
+  - name: SOMBRApistilos4ELEMENTOS
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5329
+      y: 5034
+      width: 125
+      height: 224
+    spriteID: c3ed9f20b44e63a42a52408c48b060cf
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4371, y: 3586}
+  - name: PistilosSOMBRAcolorBASE
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5462
+      y: 5034
+      width: 125
+      height: 224
+    spriteID: c59238d647dfc9a4eb0c47436802ba27
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4504, y: 3586}
+  - name: petalosSOMBRA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1034
+      width: 1266
+      height: 1034
+    spriteID: 5a56aa4510a393841a8aaa195c9fd936
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -387, y: 91}
+  - name: SOMBRApetalosAGUA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2566
+      y: 4
+      width: 1249
+      height: 1016
+    spriteID: 8d66bfa768e90e34a839af65c03c4975
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2167, y: -950}
+  - name: SOMBRApetalosFUEGO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3823
+      y: 4
+      width: 1249
+      height: 1016
+    spriteID: cf0ae67261065bd47a5ec3ee54022a05
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3424, y: -950}
+  - name: SOMBRApetalosAIRE
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5080
+      y: 4
+      width: 1249
+      height: 1016
+    spriteID: faf2b9cd0597bf34e9a6cb51294044ae
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4681, y: -950}
+  - name: SOMBRApetalosTIERRA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6337
+      y: 4
+      width: 1249
+      height: 1016
+    spriteID: 44a38497976b20145aab78c173289305
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5938, y: -950}
+  - name: SOMBRApetalosFUEGO+TIERRA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1278
+      y: 1034
+      width: 1249
+      height: 1016
+    spriteID: 437af20983b3e1148ad97743e2191b86
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 879, y: 80}
+  - name: SOMBRApetalosAGUA+TIERRA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2535
+      y: 1034
+      width: 1249
+      height: 1016
+    spriteID: e28854854537b254ba17528c0d4796e0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2136, y: 80}
+  - name: SOMBRApetalosAGUA+FUEGO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1294
+      height: 1022
+    spriteID: e3c0a38cf3015dd4d89e17090e63f926
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -395, y: -944}
+  - name: SOMBRApetalosAIRE+TIERRA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1306
+      y: 4
+      width: 1252
+      height: 1016
+    spriteID: 5c9855456ae463743871c12942448b48
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 907, y: -950}
+  - name: SOMBRApetalosAIRE+AGUA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3792
+      y: 1034
+      width: 1249
+      height: 1016
+    spriteID: 2d458bc7c73c11844876cb99e7911654
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3393, y: 80}
+  - name: SOMBRApetalosAIRE+FUEGO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5049
+      y: 1034
+      width: 1249
+      height: 1016
+    spriteID: d712e9966a1cf95448fb6153957a51a8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4650, y: 80}
+  - name: SOMBRApetalos3ELEMENTOS
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6306
+      y: 1034
+      width: 1249
+      height: 1016
+    spriteID: b94a73761d8f06a458cce8b96fb9719d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5907, y: 80}
+  - name: SOMBRApetalos4ELEMENTOS
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1170
+      y: 2076
+      width: 1249
+      height: 1016
+    spriteID: 80c6740985f23194a8619e21bd4ddc61
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 771, y: 1122}
+  - name: SOMBRApetalosBASE
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2427
+      y: 2076
+      width: 1249
+      height: 1016
+    spriteID: 6651563c9cb779e46a4ecbbe6e462b85
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2028, y: 1122}
+  - name: pistilosLUZ
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7155
+      y: 2076
+      width: 928
+      height: 750
+    spriteID: 1d14d14b8010e2a41961404e9365ed6b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6595, y: 1244}
+  - name: LUZpistiloAGUA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6256
+      y: 4289
+      width: 918
+      height: 737
+    spriteID: 734a04b1c5625c74282172bcd73d79f9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5693, y: 3450}
+  - name: LUZpistiloFUEGO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7182
+      y: 4289
+      width: 918
+      height: 737
+    spriteID: 87b9c9dc5826ddf4faa1f0237095f544
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6619, y: 3450}
+  - name: LUZpistiloAIRE
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5386
+      width: 918
+      height: 737
+    spriteID: 845e010dafa8b664eaa74d2e3e9b1b31
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -559, y: 4547}
+  - name: LUZpistiloTIERRA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3475
+      y: 4289
+      width: 919
+      height: 737
+    spriteID: 7de9c133f2ae28b4ab7eae1b60e321ec
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2912, y: 3450}
+  - name: 'LUZpistiloFUEGO+TIERRA '
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4402
+      y: 4289
+      width: 919
+      height: 737
+    spriteID: e6a6ea2048390d04a865f762b51fe6ba
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3839, y: 3450}
+  - name: LUZpistiloAGUA+TIERRA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5329
+      y: 4289
+      width: 919
+      height: 737
+    spriteID: 78dfd7e270a1fb741956e212b8573cca
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4766, y: 3450}
+  - name: LUZpistiloAGUA+FUEGO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 930
+      y: 5386
+      width: 918
+      height: 737
+    spriteID: 1019bbad125e2544e9b43c0bcc59ed39
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 367, y: 4547}
+  - name: LUZpistiloAIRE+TIERRA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1856
+      y: 5386
+      width: 918
+      height: 737
+    spriteID: b4846bd39d7274642a5e22f9f8b0f8e1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1293, y: 4547}
+  - name: LUZpistiloAIRE+AGUA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2782
+      y: 5386
+      width: 918
+      height: 737
+    spriteID: 7124cc25c5082424698583d0e7cdb4b3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2219, y: 4547}
+  - name: LUZpistiloAIRE+FUEGO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3708
+      y: 5386
+      width: 918
+      height: 737
+    spriteID: 719ae347ff09e8c41aa6a1536bf76e93
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3145, y: 4547}
+  - name: LUZpistilos3ELEMENTOS
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4634
+      y: 5386
+      width: 918
+      height: 737
+    spriteID: b1a83e8c58fb9744f8aef2ec3b5e9977
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4071, y: 4547}
+  - name: LUZpistilos4ELEMENTOS
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5560
+      y: 5386
+      width: 918
+      height: 737
+    spriteID: ffcbd27fef0ba9b4cac5203ecf6ad593
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4997, y: 4547}
+  - name: pisitlosLUZcoloroBASE
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6486
+      y: 5386
+      width: 918
+      height: 737
+    spriteID: b81bc80843903504eafd1eb625310b25
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5923, y: 4547}
+  - name: PetalosLUZ
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2076
+      width: 1158
+      height: 1108
+    spriteID: db49c5b97c995824097d8f0b8c50bcdd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -441, y: 1280}
+  - name: LUZpetalosAGUA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3684
+      y: 2076
+      width: 1149
+      height: 1089
+    spriteID: 7279bb46a5392e24cb1d76672eda65a0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3234, y: 1269}
+  - name: LUZpetalosFUEGO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4841
+      y: 2076
+      width: 1149
+      height: 1089
+    spriteID: e307b83e94e3ecd49b3765f6242350b8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4391, y: 1269}
+  - name: LUZpetalosAIRE
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5998
+      y: 2076
+      width: 1149
+      height: 1089
+    spriteID: 47f9062b7bb5ee44f8d245049e66bed7
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5548, y: 1269}
+  - name: LUZpetalosTIERRA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3192
+      width: 1149
+      height: 1089
+    spriteID: 8b41e668112da5e40a19d2614f6733d3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -446, y: 2385}
+  - name: LUZpetalosFUEGO+TIERRA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1161
+      y: 3192
+      width: 1149
+      height: 1089
+    spriteID: 0af180e08debe364ea9d59dde074c8c0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 711, y: 2385}
+  - name: LUZpetalosAGUA+TIERRA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2318
+      y: 3192
+      width: 1149
+      height: 1089
+    spriteID: 0a44b8c7d3ff59c4fb7025fc7f0284e3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1868, y: 2385}
+  - name: LUZpetalosAGUA+FUEGO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3475
+      y: 3192
+      width: 1149
+      height: 1089
+    spriteID: 3324c35f229aa63419d9b9fa22584821
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3025, y: 2385}
+  - name: LUZpetalosAIRE+TIERRA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4632
+      y: 3192
+      width: 1149
+      height: 1089
+    spriteID: 9c7ab2d5960af2c44b678d2def27a921
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4182, y: 2385}
+  - name: LUZpetalosaAIRE+AGUA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5789
+      y: 3192
+      width: 1149
+      height: 1089
+    spriteID: bc377f254e6984840955816f0d33d3ee
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5339, y: 2385}
+  - name: LUZpetalosAIRE+FUEGO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6946
+      y: 3192
+      width: 1149
+      height: 1089
+    spriteID: 61e987ae8f243dd4fb790da75e1ab424
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6496, y: 2385}
+  - name: LUZpetalos3ELEMENTOS
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4289
+      width: 1149
+      height: 1089
+    spriteID: cdea1cebf122c6e47a0cc706ac4e1a61
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -446, y: 3482}
+  - name: LUZpetalos4ELEMENTOS
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1161
+      y: 4289
+      width: 1149
+      height: 1089
+    spriteID: 077d7702f985264468b71b6d4c7749ac
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 711, y: 3482}
+  - name: petalosLUZcolorBASE
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2318
+      y: 4289
+      width: 1149
+      height: 1089
+    spriteID: 7c4c9d60a9bcb374d9e4a95660b7f0fc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1868, y: 3482}
+  - name: Base-front
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3475
+      y: 5034
+      width: 383
+      height: 271
+    spriteID: 29a2567820d274f4f871b4057d086bfb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2643, y: 5034}
+  - name: tallo
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7412
+      y: 5386
+      width: 452
+      height: 622
+    spriteID: ab7c4c10c8a2d3b45a9c45e2e28824e8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6614, y: 5369}
+  - name: Base back
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3866
+      y: 5034
+      width: 300
+      height: 315
+    spriteID: 4fc0fdcd8db02e94a988cf6eaace6a2a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2992, y: 5032}
+  - name: Cejas
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3475
+      y: 5313
+      width: 340
+      height: 59
+    spriteID: b5514ac2aca7781468612b454e532ece
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2621, y: 4399}
+  - name: boca
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6959
+      y: 5280
+      width: 136
+      height: 58
+    spriteID: 37937c953f372104d827fccf408d8f2a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6003, y: 4625}
+  - name: Ojos
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4402
+      y: 5034
+      width: 387
+      height: 141
+    spriteID: 7c13a5133d31d8b4786da8c84fd94073
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3571, y: 4259}
+  - name: brazos
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6256
+      y: 5034
+      width: 695
+      height: 340
+    spriteID: 6f192ba18522cd647982a4734de27898
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5580, y: 4373}
+  - name: Cuerpo
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7594
+      y: 4
+      width: 568
+      height: 931
+    spriteID: c2601ebc58a0eb046afbc685c01e3a29
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 6854, y: -493}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 2048
+  importedTextureHeight: 2048
+  documentSize: {x: 2048, y: 2048}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 8192
+  textureActualHeight: 8192
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: pistiloSOMBRA
+    spriteName: pistiloSOMBRA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 36736a6934199c04bb9e78b01cfc238e
+    layerID: 0
+    mosaicPosition: {x: 6959, y: 5034}
+  - name: SOMBRApistilosAGUA
+    spriteName: SOMBRApistilosAGUA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ab20c2b674622ac41b1ee319247fdabd
+    layerID: 611086553
+    mosaicPosition: {x: 4174, y: 5034}
+  - name: SOMBRApistilosFUEGO
+    spriteName: SOMBRApistilosFUEGO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ffd565aa5465c804bbb6268cdfa8dba1
+    layerID: -1679600387
+    mosaicPosition: {x: 4797, y: 5034}
+  - name: SOMBRApistilosAIRE
+    spriteName: SOMBRApistilosAIRE
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e7e1481f960aca74b8972e18386e6196
+    layerID: -235888446
+    mosaicPosition: {x: 4930, y: 5034}
+  - name: SOMBRApistilosTIERRA
+    spriteName: SOMBRApistilosTIERRA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 175c8b96d4ab48d4091830764ab303b1
+    layerID: -2097913564
+    mosaicPosition: {x: 5063, y: 5034}
+  - name: SOMBRApistilosFUEGO+TIERRA
+    spriteName: SOMBRApistilosFUEGO+TIERRA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 23676837e0cf3ba40a345a958f4aa090
+    layerID: 2065505387
+    mosaicPosition: {x: 5196, y: 5034}
+  - name: SOMBRApistilosAGUA+TIERRA
+    spriteName: SOMBRApistilosAGUA+TIERRA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b340dc34be2d8d34f82657f993b89611
+    layerID: -1612148177
+    mosaicPosition: {x: 7872, y: 5386}
+  - name: SOMBRApistilosAGUA+FUEGO
+    spriteName: SOMBRApistilosAGUA+FUEGO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a952b3498f384244993bfceda9342cc2
+    layerID: 1885062854
+    mosaicPosition: {x: 7872, y: 5618}
+  - name: SOMBRApistilosAIRE+TIERRA
+    spriteName: SOMBRApistilosAIRE+TIERRA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3272a2dba18161a409d8093474f5d38c
+    layerID: 522604610
+    mosaicPosition: {x: 7872, y: 5850}
+  - name: SOMBRApistilosAIRE+AGUA
+    spriteName: SOMBRApistilosAIRE+AGUA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 74b91ead6a6e9ce459c36ca48525f97a
+    layerID: 292874033
+    mosaicPosition: {x: 8005, y: 5386}
+  - name: SOMBRApistilosAIRE+FUEGO
+    spriteName: SOMBRApistilosAIRE+FUEGO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 28f85d7b89c9fc64c967306e90a425ee
+    layerID: -1025039651
+    mosaicPosition: {x: 8005, y: 5618}
+  - name: SOMBRApistilos3ELEMENTOS
+    spriteName: SOMBRApistilos3ELEMENTOS
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ecc983be3b16ea14bbdb1764dbd20f8a
+    layerID: 926612972
+    mosaicPosition: {x: 8005, y: 5850}
+  - name: SOMBRApistilos4ELEMENTOS
+    spriteName: SOMBRApistilos4ELEMENTOS
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c3ed9f20b44e63a42a52408c48b060cf
+    layerID: 914132325
+    mosaicPosition: {x: 5329, y: 5034}
+  - name: PistilosSOMBRAcolorBASE
+    spriteName: PistilosSOMBRAcolorBASE
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c59238d647dfc9a4eb0c47436802ba27
+    layerID: -1635413737
+    mosaicPosition: {x: 5462, y: 5034}
+  - name: petalosSOMBRA
+    spriteName: petalosSOMBRA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5a56aa4510a393841a8aaa195c9fd936
+    layerID: -1993723876
+    mosaicPosition: {x: 4, y: 1034}
+  - name: SOMBRApetalosAGUA
+    spriteName: SOMBRApetalosAGUA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8d66bfa768e90e34a839af65c03c4975
+    layerID: 1837595074
+    mosaicPosition: {x: 2566, y: 4}
+  - name: SOMBRApetalosFUEGO
+    spriteName: SOMBRApetalosFUEGO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cf0ae67261065bd47a5ec3ee54022a05
+    layerID: -1457994042
+    mosaicPosition: {x: 3823, y: 4}
+  - name: SOMBRApetalosAIRE
+    spriteName: SOMBRApetalosAIRE
+    isGroup: 0
+    parentIndex: -1
+    spriteID: faf2b9cd0597bf34e9a6cb51294044ae
+    layerID: -1697857261
+    mosaicPosition: {x: 5080, y: 4}
+  - name: SOMBRApetalosTIERRA
+    spriteName: SOMBRApetalosTIERRA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 44a38497976b20145aab78c173289305
+    layerID: 445199885
+    mosaicPosition: {x: 6337, y: 4}
+  - name: SOMBRApetalosFUEGO+TIERRA
+    spriteName: SOMBRApetalosFUEGO+TIERRA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 437af20983b3e1148ad97743e2191b86
+    layerID: -1040564782
+    mosaicPosition: {x: 1278, y: 1034}
+  - name: SOMBRApetalosAGUA+TIERRA
+    spriteName: SOMBRApetalosAGUA+TIERRA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e28854854537b254ba17528c0d4796e0
+    layerID: -181955846
+    mosaicPosition: {x: 2535, y: 1034}
+  - name: SOMBRApetalosAGUA+FUEGO
+    spriteName: SOMBRApetalosAGUA+FUEGO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e3c0a38cf3015dd4d89e17090e63f926
+    layerID: -1849089629
+    mosaicPosition: {x: 4, y: 4}
+  - name: SOMBRApetalosAIRE+TIERRA
+    spriteName: SOMBRApetalosAIRE+TIERRA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5c9855456ae463743871c12942448b48
+    layerID: 2020359997
+    mosaicPosition: {x: 1306, y: 4}
+  - name: SOMBRApetalosAIRE+AGUA
+    spriteName: SOMBRApetalosAIRE+AGUA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2d458bc7c73c11844876cb99e7911654
+    layerID: 925419030
+    mosaicPosition: {x: 3792, y: 1034}
+  - name: SOMBRApetalosAIRE+FUEGO
+    spriteName: SOMBRApetalosAIRE+FUEGO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d712e9966a1cf95448fb6153957a51a8
+    layerID: -207884806
+    mosaicPosition: {x: 5049, y: 1034}
+  - name: SOMBRApetalos3ELEMENTOS
+    spriteName: SOMBRApetalos3ELEMENTOS
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b94a73761d8f06a458cce8b96fb9719d
+    layerID: 1964707717
+    mosaicPosition: {x: 6306, y: 1034}
+  - name: SOMBRApetalos4ELEMENTOS
+    spriteName: SOMBRApetalos4ELEMENTOS
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 80c6740985f23194a8619e21bd4ddc61
+    layerID: -1973220610
+    mosaicPosition: {x: 1170, y: 2076}
+  - name: SOMBRApetalosBASE
+    spriteName: SOMBRApetalosBASE
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6651563c9cb779e46a4ecbbe6e462b85
+    layerID: 9388917
+    mosaicPosition: {x: 2427, y: 2076}
+  - name: pistilosLUZ
+    spriteName: pistilosLUZ
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1d14d14b8010e2a41961404e9365ed6b
+    layerID: 1665071696
+    mosaicPosition: {x: 7155, y: 2076}
+  - name: LUZpistiloAGUA
+    spriteName: LUZpistiloAGUA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 734a04b1c5625c74282172bcd73d79f9
+    layerID: 416446677
+    mosaicPosition: {x: 6256, y: 4289}
+  - name: LUZpistiloFUEGO
+    spriteName: LUZpistiloFUEGO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 87b9c9dc5826ddf4faa1f0237095f544
+    layerID: -1109288367
+    mosaicPosition: {x: 7182, y: 4289}
+  - name: LUZpistiloAIRE
+    spriteName: LUZpistiloAIRE
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 845e010dafa8b664eaa74d2e3e9b1b31
+    layerID: 1263421678
+    mosaicPosition: {x: 4, y: 5386}
+  - name: LUZpistiloTIERRA
+    spriteName: LUZpistiloTIERRA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7de9c133f2ae28b4ab7eae1b60e321ec
+    layerID: 1606401900
+    mosaicPosition: {x: 3475, y: 4289}
+  - name: 'LUZpistiloFUEGO+TIERRA '
+    spriteName: 'LUZpistiloFUEGO+TIERRA '
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e6a6ea2048390d04a865f762b51fe6ba
+    layerID: 2068326811
+    mosaicPosition: {x: 4402, y: 4289}
+  - name: LUZpistiloAGUA+TIERRA
+    spriteName: LUZpistiloAGUA+TIERRA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 78dfd7e270a1fb741956e212b8573cca
+    layerID: -1804721769
+    mosaicPosition: {x: 5329, y: 4289}
+  - name: LUZpistiloAGUA+FUEGO
+    spriteName: LUZpistiloAGUA+FUEGO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1019bbad125e2544e9b43c0bcc59ed39
+    layerID: 1432429194
+    mosaicPosition: {x: 930, y: 5386}
+  - name: LUZpistiloAIRE+TIERRA
+    spriteName: LUZpistiloAIRE+TIERRA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b4846bd39d7274642a5e22f9f8b0f8e1
+    layerID: 357450626
+    mosaicPosition: {x: 1856, y: 5386}
+  - name: LUZpistiloAIRE+AGUA
+    spriteName: LUZpistiloAIRE+AGUA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7124cc25c5082424698583d0e7cdb4b3
+    layerID: 1117969277
+    mosaicPosition: {x: 2782, y: 5386}
+  - name: LUZpistiloAIRE+FUEGO
+    spriteName: LUZpistiloAIRE+FUEGO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 719ae347ff09e8c41aa6a1536bf76e93
+    layerID: 47623729
+    mosaicPosition: {x: 3708, y: 5386}
+  - name: LUZpistilos3ELEMENTOS
+    spriteName: LUZpistilos3ELEMENTOS
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b1a83e8c58fb9744f8aef2ec3b5e9977
+    layerID: -1397678511
+    mosaicPosition: {x: 4634, y: 5386}
+  - name: LUZpistilos4ELEMENTOS
+    spriteName: LUZpistilos4ELEMENTOS
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ffcbd27fef0ba9b4cac5203ecf6ad593
+    layerID: 1869375448
+    mosaicPosition: {x: 5560, y: 5386}
+  - name: pisitlosLUZcoloroBASE
+    spriteName: pisitlosLUZcoloroBASE
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b81bc80843903504eafd1eb625310b25
+    layerID: -788234929
+    mosaicPosition: {x: 6486, y: 5386}
+  - name: PetalosLUZ
+    spriteName: PetalosLUZ
+    isGroup: 0
+    parentIndex: -1
+    spriteID: db49c5b97c995824097d8f0b8c50bcdd
+    layerID: -188812157
+    mosaicPosition: {x: 4, y: 2076}
+  - name: LUZpetalosAGUA
+    spriteName: LUZpetalosAGUA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7279bb46a5392e24cb1d76672eda65a0
+    layerID: -1474482259
+    mosaicPosition: {x: 3684, y: 2076}
+  - name: LUZpetalosFUEGO
+    spriteName: LUZpetalosFUEGO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e307b83e94e3ecd49b3765f6242350b8
+    layerID: 329877745
+    mosaicPosition: {x: 4841, y: 2076}
+  - name: LUZpetalosAIRE
+    spriteName: LUZpetalosAIRE
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 47f9062b7bb5ee44f8d245049e66bed7
+    layerID: 487979662
+    mosaicPosition: {x: 5998, y: 2076}
+  - name: LUZpetalosTIERRA
+    spriteName: LUZpetalosTIERRA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8b41e668112da5e40a19d2614f6733d3
+    layerID: -1089854832
+    mosaicPosition: {x: 4, y: 3192}
+  - name: LUZpetalosFUEGO+TIERRA
+    spriteName: LUZpetalosFUEGO+TIERRA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0af180e08debe364ea9d59dde074c8c0
+    layerID: 919491487
+    mosaicPosition: {x: 1161, y: 3192}
+  - name: LUZpetalosAGUA+TIERRA
+    spriteName: LUZpetalosAGUA+TIERRA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0a44b8c7d3ff59c4fb7025fc7f0284e3
+    layerID: -1841857885
+    mosaicPosition: {x: 2318, y: 3192}
+  - name: LUZpetalosAGUA+FUEGO
+    spriteName: LUZpetalosAGUA+FUEGO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3324c35f229aa63419d9b9fa22584821
+    layerID: -537809862
+    mosaicPosition: {x: 3475, y: 3192}
+  - name: LUZpetalosAIRE+TIERRA
+    spriteName: LUZpetalosAIRE+TIERRA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9c7ab2d5960af2c44b678d2def27a921
+    layerID: -1294764626
+    mosaicPosition: {x: 4632, y: 3192}
+  - name: LUZpetalosaAIRE+AGUA
+    spriteName: LUZpetalosaAIRE+AGUA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bc377f254e6984840955816f0d33d3ee
+    layerID: -1172681270
+    mosaicPosition: {x: 5789, y: 3192}
+  - name: LUZpetalosAIRE+FUEGO
+    spriteName: LUZpetalosAIRE+FUEGO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 61e987ae8f243dd4fb790da75e1ab424
+    layerID: 7568969
+    mosaicPosition: {x: 6946, y: 3192}
+  - name: LUZpetalos3ELEMENTOS
+    spriteName: LUZpetalos3ELEMENTOS
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cdea1cebf122c6e47a0cc706ac4e1a61
+    layerID: -239476424
+    mosaicPosition: {x: 4, y: 4289}
+  - name: LUZpetalos4ELEMENTOS
+    spriteName: LUZpetalos4ELEMENTOS
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 077d7702f985264468b71b6d4c7749ac
+    layerID: -234106695
+    mosaicPosition: {x: 1161, y: 4289}
+  - name: petalosLUZcolorBASE
+    spriteName: petalosLUZcolorBASE
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7c4c9d60a9bcb374d9e4a95660b7f0fc
+    layerID: 1925201471
+    mosaicPosition: {x: 2318, y: 4289}
+  - name: Base-front
+    spriteName: Base-front
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 29a2567820d274f4f871b4057d086bfb
+    layerID: 164440273
+    mosaicPosition: {x: 3475, y: 5034}
+  - name: tallo
+    spriteName: tallo
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ab7c4c10c8a2d3b45a9c45e2e28824e8
+    layerID: 593465626
+    mosaicPosition: {x: 7412, y: 5386}
+  - name: Base back
+    spriteName: Base back
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4fc0fdcd8db02e94a988cf6eaace6a2a
+    layerID: -799411874
+    mosaicPosition: {x: 3866, y: 5034}
+  - name: Cejas
+    spriteName: Cejas
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b5514ac2aca7781468612b454e532ece
+    layerID: -374442044
+    mosaicPosition: {x: 3475, y: 5313}
+  - name: boca
+    spriteName: boca
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 37937c953f372104d827fccf408d8f2a
+    layerID: -555123461
+    mosaicPosition: {x: 6959, y: 5280}
+  - name: Ojos
+    spriteName: Ojos
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7c13a5133d31d8b4786da8c84fd94073
+    layerID: 318703889
+    mosaicPosition: {x: 4402, y: 5034}
+  - name: brazos
+    spriteName: brazos
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6f192ba18522cd647982a4734de27898
+    layerID: -1873866817
+    mosaicPosition: {x: 6256, y: 5034}
+  - name: Cuerpo
+    spriteName: Cuerpo
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c2601ebc58a0eb046afbc685c01e3a29
+    layerID: -1938317068
+    mosaicPosition: {x: 7594, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: Disprout Texture
+  prefabAssetName: Disprout Prefab
+  spriteLibAssetName: Disprout Sprite Lib
+  secondarySpriteTextures: []
