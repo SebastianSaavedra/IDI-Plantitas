@@ -14,14 +14,19 @@ public class ArduinoData : MonoBehaviour
     int datoPhotosensor2; // Datos sensor de luz2
     int datoSensorHumedad; //Datos del sensor de humedad
     int datoBoton;  // Datos boton
+    [SerializeField] int interacciones = 0;
 
     bool hayLuz;
     bool activo1,activo2,activo3,activo4,activo5,activo6,activo7,activo8,activo9;
     bool crecio;
+    bool interaccionMultiple = false;
+    bool sePrendio;
 
     [SerializeField] float duration = 1.5f;
 
     [SerializeField] Animator anim;
+
+    [SerializeField] List<AudioSource> audios = new List<AudioSource>();
 
     [SerializeField] SpriteRenderer petaloSOMBRABASE,petaloLUZBASE,pistilloSOMBRABASE,pistilloLUZBASE,petaloMarcoLUZ,pistilloMarcoLUZ,petaloMarcoSombra,pistilloMarcoSombra;
 
@@ -66,76 +71,300 @@ public class ArduinoData : MonoBehaviour
 
     }
 
-    void Update()       // PAUSAR ANIMACIÓN Y ESPERAR A QUE LA PLANTA CREZCA DE NUEVO (LUZ Y SOMBRA) Y MEZCLAR POR LO MENOS UN PAR DE WEAS //
+    void Update()       
     {
+        if (datoPhotosensor1 == 0 && datoPhotosensor2 == 0 && sePrendio)
+        {
+            sePrendio = false;
+            crecio = false;
+            interacciones = 0;
+            anim.Play("Base Layer.FlorEncoje");
+            StartCoroutine("ActivarTodo");
+            foreach (AudioSource item in audios)
+            {
+                item.DOFade(0f, 1f);
+            }
+        }
+        InteraccionMultiple();
+
         SensorDeSonido();
         SensorDeFuego();
         SensorDeLuz1();
         SensorDeLuz2();
         SensorDeHumedad();
         Boton();
-
-        //fusion
-        //Test();
-        //
     }
 
-    void Test()     // Mezclas 
+    void InteraccionMultiple()     // Mezclas 
     {
-        if (datoBoton == 1 && datoSensorHumedad == 1)
+        if (interacciones >= 5)
         {
+            interaccionMultiple = true;
+            audios[4].DOFade(1f, 1f);
             activo7 = true;
             if (hayLuz)
             {
                 ActivarMarcoLuz();
-                petalosAguaLUZ[2].DOFade(1f,duration);
-                pistilloAguaLUZ[2].DOFade(1f,duration);
+                cuatroElementosPetalos[0].DOFade(1f,duration);
+                cuatroElementosPistillo[0].DOFade(1f,duration);
             }
 
             else
             {
                 ActivarMarcoSombra();
-                petalosAguaSOMBRA[2].DOFade(1f,duration);
-                pistilloAguaSOMBRA[2].DOFade(1f,duration);
+                cuatroElementosPetalos[1].DOFade(1f, duration);
+                cuatroElementosPistillo[1].DOFade(1f, duration);
             }
-
+            Debug.Log("Mezcla cuadruple ON");
         }
 
-        //else if (datoBoton == 1 && datoSensorHumedad == 1 && datoFuego == 1) //va a chocar con el if de arriba
-        //{
-        //    activo8 = true;
-        //    if (hayLuz)
-        //    {
-        //        ActivarMarcoLuz();
-        //        tresElementosPetalos[0].DOFade(1f,duration);
-        //        tresElementosPistillo[0].DOFade(1f,duration);
-        //    }
+        else if (interacciones == 4)
+        {
+            interaccionMultiple = true;
+            audios[3].DOFade(1f, 1f);
+            activo8 = true;
+            if (hayLuz)
+            {
+                ActivarMarcoLuz();
+                tresElementosPetalos[0].DOFade(1f, duration);
+                tresElementosPistillo[0].DOFade(1f, duration);
+            }
 
-        //    else
-        //    {
-        //        ActivarMarcoSombra();
-        //        tresElementosPetalos[1].DOFade(1f, duration);
-        //        tresElementosPistillo[1].DOFade(1f, duration);
-        //    }
-        //}
+            else
+            {
+                ActivarMarcoSombra();
+                tresElementosPetalos[1].DOFade(1f, duration);
+                tresElementosPistillo[1].DOFade(1f, duration);
+            }
+            Debug.Log("Mezcla Triple ON");
+        }
 
-        //else if ()
-        //{
+        #region la pesadilla de cualquier programador, else ifs infinitos
 
-        //}
+        #region Agua
+        else if (datoBoton == 1 && datoSensorHumedad == 1)
+        {
+            audios[2].DOFade(1f, 1f);
+            activo9 = true;
+            if (hayLuz)
+            {
+                ActivarMarcoLuz();
+                petalosAguaLUZ[2].DOFade(1f, duration);
+                pistilloAguaLUZ[2].DOFade(1f, duration);
+            }
+
+            else
+            {
+                ActivarMarcoSombra();
+                petalosAguaSOMBRA[2].DOFade(1f, duration);
+                pistilloAguaSOMBRA[2].DOFade(1f, duration);
+            }
+            Debug.Log("Agua tierra");
+        }
+
+        else if (datoFuego == 1 && datoSensorHumedad == 1)
+        {
+            audios[2].DOFade(1f, 1f);
+            activo9 = true;
+            if (hayLuz)
+            {
+                ActivarMarcoLuz();
+                petalosAguaLUZ[1].DOFade(1f, duration);
+                pistilloAguaLUZ[1].DOFade(1f, duration);
+            }
+
+            else
+            {
+                ActivarMarcoSombra();
+                petalosAguaSOMBRA[1].DOFade(1f, duration);
+                pistilloAguaSOMBRA[1].DOFade(1f, duration);
+            }
+            Debug.Log("Agua Fuego");
+        }
+
+        else if (datoSonido == 1 && datoSensorHumedad == 1)
+        {
+            audios[2].DOFade(1f, 1f);
+            activo9 = true;
+            if (hayLuz)
+            {
+                ActivarMarcoLuz();
+                petalosAguaLUZ[3].DOFade(1f, duration);
+                pistilloAguaLUZ[3].DOFade(1f, duration);
+            }
+
+            else
+            {
+                ActivarMarcoSombra();
+                petalosAguaSOMBRA[3].DOFade(1f, duration);
+                pistilloAguaSOMBRA[3].DOFade(1f, duration);
+            }
+            Debug.Log("Agua Aire");
+        }
+        #endregion
+        #region Tierra
+        else if (datoBoton == 1 && datoFuego == 1)
+        {
+            audios[2].DOFade(1f, 1f);
+            activo9 = true;
+            if (hayLuz)
+            {
+                ActivarMarcoLuz();
+                petalosTierraLUZ[2].DOFade(1f, duration);
+                pistilloFuegoLUZ[1].DOFade(1f, duration);
+            }
+
+            else
+            {
+                ActivarMarcoSombra();
+                petalosTierraSOMBRA[1].DOFade(1f, duration);
+                pistilloFuegoSOMBRA[1].DOFade(1f, duration);
+            }
+            Debug.Log("Tierra Fuego");
+        }
+
+        else if (datoBoton == 1 && datoSonido == 1)
+        {
+            audios[2].DOFade(1f, 1f);
+            activo9 = true;
+            if (hayLuz)
+            {
+                ActivarMarcoLuz();
+                petalosTierraLUZ[1].DOFade(1f, duration);
+                pistilloAireLUZ[2].DOFade(1f, duration);
+            }
+
+            else
+            {
+                ActivarMarcoSombra();
+                petalosTierraSOMBRA[3].DOFade(1f, duration);
+                pistilloAireSOMBRA[2].DOFade(1f, duration);
+            }
+            Debug.Log("Tierra Aire");
+        }
+        #endregion
+        #region Fuego
+        else if (datoFuego == 1 && datoSonido == 1)
+        {
+            audios[2].DOFade(1f, 1f);
+            activo9 = true;
+            if (hayLuz)
+            {
+                ActivarMarcoLuz();
+                petalosFuegoLUZ[3].DOFade(1f, duration);
+                pistilloAireLUZ[1].DOFade(1f, duration);
+            }
+
+            else
+            {
+                ActivarMarcoSombra();
+                petalosFuegoSOMBRA[3].DOFade(1f, duration);
+                pistilloAireSOMBRA[2].DOFade(1f, duration);
+            }
+            Debug.Log("Fuego Aire");
+        }
+        #endregion
+
+        #endregion
 
         else
         {
             if (activo7 || activo8 || activo9)
             {
-                petalosAguaLUZ[2].DOFade(0f, duration);
-                pistilloAguaLUZ[2].DOFade(0f, duration);
-                petalosAguaSOMBRA[2].DOFade(0f, duration);
-                pistilloAguaSOMBRA[2].DOFade(0f, duration);
+                //petalosAguaLUZ[2].DOFade(0f, duration);
+                //pistilloAguaLUZ[2].DOFade(0f, duration);
+                //petalosAguaSOMBRA[2].DOFade(0f, duration);
+                //pistilloAguaSOMBRA[2].DOFade(0f, duration);
                 tresElementosPetalos[0].DOFade(0f, duration);
                 tresElementosPistillo[0].DOFade(0f, duration);
-                Desactivar();
+                tresElementosPetalos[1].DOFade(0f, duration);
+                tresElementosPistillo[1].DOFade(0f, duration);
+                //petalosTierraSOMBRA[1].DOFade(0f, duration);
+                //pistilloFuegoSOMBRA[1].DOFade(0f, duration);
+                //petalosTierraLUZ[2].DOFade(0f, duration);
+                //pistilloFuegoLUZ[1].DOFade(0f, duration);
 
+                //agua
+                foreach (SpriteRenderer item in petalosAguaLUZ)
+                {
+                    item.DOFade(0f, duration);
+                }
+                foreach (SpriteRenderer item in pistilloAguaLUZ)
+                {
+                    item.DOFade(0f, duration);
+                }
+                foreach (SpriteRenderer item in petalosAguaSOMBRA)
+                {
+                    item.DOFade(0f, duration);
+                }
+                foreach (SpriteRenderer item in pistilloAguaSOMBRA)
+                {
+                    item.DOFade(0f, duration);
+                }
+
+                //tierra
+                foreach (SpriteRenderer item in petalosTierraLUZ)
+                {
+                    item.DOFade(0f, duration);
+                }
+                foreach (SpriteRenderer item in pistilloTierraLUZ)
+                {
+                    item.DOFade(0f, duration);
+                }
+                foreach (SpriteRenderer item in petalosTierraSOMBRA)
+                {
+                    item.DOFade(0f, duration);
+                }
+                foreach (SpriteRenderer item in pistilloTierraSOMBRA)
+                {
+                    item.DOFade(0f, duration);
+                }
+
+                //Fuego
+                foreach (SpriteRenderer item in petalosFuegoLUZ)
+                {
+                    item.DOFade(0f, duration);
+                }
+                foreach (SpriteRenderer item in pistilloFuegoLUZ)
+                {
+                    item.DOFade(0f, duration);
+                }
+                foreach (SpriteRenderer item in petalosFuegoSOMBRA)
+                {
+                    item.DOFade(0f, duration);
+                }
+                foreach (SpriteRenderer item in pistilloFuegoSOMBRA)
+                {
+                    item.DOFade(0f, duration);
+                }
+
+                //Aire
+                foreach (SpriteRenderer item in petalosAireLUZ)
+                {
+                    item.DOFade(0f, duration);
+                }
+                foreach (SpriteRenderer item in pistilloAireLUZ)
+                {
+                    item.DOFade(0f, duration);
+                }
+                foreach (SpriteRenderer item in petalosAireSOMBRA)
+                {
+                    item.DOFade(0f, duration);
+                }
+                foreach (SpriteRenderer item in pistilloAireSOMBRA)
+                {
+                    item.DOFade(0f, duration);
+                }
+                audios[2].DOFade(0f,1f);
+                audios[3].DOFade(0f,1f);
+                audios[4].DOFade(0f,1f);
+                activo7 = false;
+                activo8 = false;
+                activo9 = false;
+                interaccionMultiple = false;
+                sePrendio = false;
+                interacciones--;
+                Debug.Log("Interacciones Multiples desactivadas");
             }
         }
     }
@@ -144,20 +373,29 @@ public class ArduinoData : MonoBehaviour
     {
         if (datoSonido == 1) // si microfono activado
         {
-            activo1 = true;
-            if (hayLuz && datoFuego == 0 && datoBoton == 0 && datoSensorHumedad == 0)   // 1 sensor activado
+            if (!interaccionMultiple)
             {
-                ActivarMarcoLuz();
-                petalosAireLUZ[0].DOFade(1f,duration);
-                pistilloAireLUZ[0].DOFade(1f,duration);
+                audios[1].DOFade(1f, 1f);
+                if (!activo1)
+                {
+                    interacciones++;
+                    activo1 = true;
+                }
+
+                if (hayLuz && datoFuego == 0 && datoBoton == 0 && datoSensorHumedad == 0)   // 1 sensor activado
+                {
+                    ActivarMarcoLuz();
+                    petalosAireLUZ[0].DOFade(1f, duration);
+                    pistilloAireLUZ[0].DOFade(1f, duration);
+                }
+                else if (!hayLuz && datoFuego == 0 && datoBoton == 0 && datoSensorHumedad == 0)   // Oscuridad
+                {
+                    ActivarMarcoSombra();
+                    petalosAireSOMBRA[0].DOFade(1f, duration);
+                    pistilloAireSOMBRA[0].DOFade(1f, duration);
+                }
+                Debug.Log("Microfono prendido");
             }
-            else if(!hayLuz && datoFuego == 0 && datoBoton == 0 && datoSensorHumedad == 0)   // Oscuridad
-            {
-                ActivarMarcoSombra();
-                petalosAireSOMBRA[0].DOFade(1f,duration);
-                pistilloAireSOMBRA[0].DOFade(1f,duration);
-            }
-            Debug.Log("Microfono prendido");
         }
 
         else // si microfono apagado
@@ -168,7 +406,9 @@ public class ArduinoData : MonoBehaviour
                 pistilloAireLUZ[0].DOFade(0f, duration);
                 petalosAireSOMBRA[0].DOFade(0f, duration);
                 pistilloAireSOMBRA[0].DOFade(0f, duration);
-                Desactivar();
+                audios[1].DOFade(0f, 1f);
+                activo1 = false;
+                interacciones--;
                 Debug.Log("Microfono apagado");
             }
         }
@@ -177,20 +417,29 @@ public class ArduinoData : MonoBehaviour
     {
         if (datoFuego == 1)
         {
-            activo2 = true;
-            if(hayLuz && datoSonido == 0 && datoBoton == 0 && datoSensorHumedad == 0)   // 1 sensor activado
+            if (!interaccionMultiple)
             {
-                ActivarMarcoLuz();
-                petalosFuegoLUZ[0].DOFade(1f,duration);
-                pistilloFuegoLUZ[0].DOFade(1f,duration);
+                audios[1].DOFade(1f, 1f);
+                if (!activo2)
+                {
+                    interacciones++;
+                    activo2 = true;
+                }
+
+                if (hayLuz && datoSonido == 0 && datoBoton == 0 && datoSensorHumedad == 0)   // 1 sensor activado
+                {
+                    ActivarMarcoLuz();
+                    petalosFuegoLUZ[0].DOFade(1f, duration);
+                    pistilloFuegoLUZ[0].DOFade(1f, duration);
+                }
+                else if (!hayLuz && datoSonido == 0 && datoBoton == 0 && datoSensorHumedad == 0)  // Oscuridad
+                {
+                    ActivarMarcoSombra();
+                    petalosFuegoSOMBRA[0].DOFade(1f, duration);
+                    pistilloFuegoSOMBRA[0].DOFade(1f, duration);
+                }
+                Debug.Log("Fuego Cerca");
             }
-            else if(!hayLuz && datoSonido == 0 && datoBoton == 0 && datoSensorHumedad == 0)  // Oscuridad
-            {
-                ActivarMarcoSombra();
-                petalosFuegoSOMBRA[0].DOFade(1f,duration);
-                pistilloFuegoSOMBRA[0].DOFade(1f,duration);
-            }
-            Debug.Log("Fuego Cerca");
         }
 
         else
@@ -201,7 +450,9 @@ public class ArduinoData : MonoBehaviour
                 pistilloFuegoLUZ[0].DOFade(0f, duration);
                 petalosFuegoSOMBRA[0].DOFade(0f, duration);
                 pistilloFuegoSOMBRA[0].DOFade(0f, duration);
-                Desactivar();
+                audios[1].DOFade(0f, 1f);
+                activo2 = false;
+                interacciones--;
                 Debug.Log("No hay Fuego");
             }
         }
@@ -211,123 +462,111 @@ public class ArduinoData : MonoBehaviour
     {
         if (datoPhotosensor1 == 1)
         {
-            if(!crecio)
+            if (!interaccionMultiple)
             {
-
-                anim.Play("Base Layer.FlorCrece");
-                crecio = true;
-            }
-
-            if (datoSonido == 0 && datoSensorHumedad == 0 && datoFuego == 0 && datoBoton == 0)   // 1 sensor activado
-            {
-                if (luces[0].activeSelf == false) // activa todos los GameObjects de luz de vuelta.
+                audios[0].DOFade(1f, 1f);
+                if (!sePrendio)
                 {
-                    foreach (GameObject go in luces)
-                    {
-                        go.SetActive(true);
-                    }
+                    interacciones++;
+                    sePrendio = true;
                 }
-
-                if (sombras[0].activeSelf == true)
+                if (datoSonido == 0 && datoSensorHumedad == 0 && datoFuego == 0 && datoBoton == 0)   // 1 sensor activado
                 {
-                    foreach (GameObject go in sombras)
+                    if (!hayLuz && anim.GetCurrentAnimatorStateInfo(0).IsName("Idle_1E"))
                     {
-                        go.SetActive(false);
+                        StartCoroutine("CambioLuz");
                     }
+
+                    else if (!crecio)
+                    {
+
+                        if (sombras[0].activeSelf == true)  // Desactiva los gameobjects de las sombras
+                        {
+                            foreach (GameObject go in sombras)
+                            {
+                                go.SetActive(false);
+                            }
+                        }
+
+                        anim.Play("Base Layer.FlorCrece");
+                        hayLuz = true;
+                        crecio = true;
+                    }
+                    ActivarMarcoLuz();
+                    Debug.Log("Recibe luz");
                 }
-
-                hayLuz = true;
-                //activo3 = true;
-                ActivarMarcoLuz();
-
-                petaloLUZBASE.DOFade(1f, duration);
-                pistilloLUZBASE.DOFade(1f, duration);
-                Debug.Log("Recibe luz");
             }
         }
-        //else
-        //{
-        //    if (activo3)
-        //    {
-        //        //petaloLUZBASE.DOFade(0f, duration);
-        //        //pistilloLUZBASE.DOFade(0f, duration);
-        //        //petaloMarcoLUZ.DOFade(0f,duration);
-        //        //pistilloMarcoLUZ.DOFade(0f,duration);
-        //        activo3 = false;
-        //        Debug.Log("No recibe Luz");
-        //    }
-        //}
     }
     void SensorDeLuz2()
     {
         if (datoPhotosensor2 == 1)
         {
-            if (!crecio)
+            if (!interaccionMultiple)
             {
-
-                anim.Play("Base Layer.FlorCrece");
-                crecio = true;
-            }
-
-            if (datoSonido == 0 && datoSensorHumedad == 0 && datoFuego == 0 && datoBoton == 0)   // 1 sensor activado
-            {
-                if (sombras[0].activeSelf == false) // activa todos los GameObjects de luz de vuelta.
+                audios[0].DOFade(1f, 1f);
+                if (!sePrendio)
                 {
-                    foreach (GameObject go in sombras)
-                    {
-                        go.SetActive(true);
-                    }
+                    interacciones++;
+                    sePrendio = true;
                 }
 
-                if (luces[0].activeSelf == true)
+                if (datoSonido == 0 && datoSensorHumedad == 0 && datoFuego == 0 && datoBoton == 0)   // 1 sensor activado
                 {
-                    foreach (GameObject go in luces)
+                    if (hayLuz && anim.GetCurrentAnimatorStateInfo(0).IsName("Idle_1E"))
                     {
-                        go.SetActive(false);
+                        StartCoroutine("CambioSombra");
                     }
+
+                    else if (!crecio)
+                    {
+
+                        if (luces[0].activeSelf == true)
+                        {
+                            foreach (GameObject go in luces)
+                            {
+                                go.SetActive(false);
+                            }
+                        }
+
+                        anim.Play("Base Layer.FlorCrece");
+                        crecio = true;
+                        hayLuz = false;
+                        Debug.Log("Esta muy oscuro");
+                    }
+                    ActivarMarcoSombra();
                 }
-
-                hayLuz = false;
-                activo4 = true;
-                ActivarMarcoSombra();
-
-                petaloSOMBRABASE.DOFade(1f, duration);
-                pistilloSOMBRABASE.DOFade(1f, duration);
             }
-            Debug.Log("Esta muy oscuro");
         }
-        //else
-        //{
-        //    if(activo4)
-        //    {
-        //        //petaloSOMBRABASE.DOFade(0f, duration);
-        //        //pistilloSOMBRABASE.DOFade(0f, duration);
-        //        //petaloMarcoLUZ.DOFade(0f,duration);
-        //        //pistilloMarcoLUZ.DOFade(0f,duration);
-        //        Debug.Log("No esta tan oscuro");
-        //        activo4 = false;
-        //    }
-        //}
     }
 
     void SensorDeHumedad()
     {
         if (datoSensorHumedad == 1)
         {
-            activo5 = true;
-            if (hayLuz && datoBoton == 0 && datoSonido == 0 && datoFuego == 0)   // 1 sensor activado
+            if (!interaccionMultiple)
             {
-                ActivarMarcoLuz();
-                petalosAguaLUZ[0].DOFade(1f, duration);
-                pistilloAguaLUZ[0].DOFade(1f,duration);
+                audios[1].DOFade(1f, 1f);
+                if (!activo5)
+                {
+                    interacciones++;
+                    activo5 = true;
+                }
+
+                if (hayLuz && datoBoton == 0 && datoSonido == 0 && datoFuego == 0)   // 1 sensor activado
+                {
+                    ActivarMarcoLuz();
+                    petalosAguaLUZ[0].DOFade(1f, duration);
+                    pistilloAguaLUZ[0].DOFade(1f, duration);
+                }
+                else if (!hayLuz && datoSonido == 0 && datoFuego == 0 && datoBoton == 0)   // Oscuridad
+                {
+                    ActivarMarcoSombra();
+                    petalosAguaSOMBRA[0].DOFade(1f, duration);
+                    pistilloAguaSOMBRA[0].DOFade(1f, duration);
+                }
+                Debug.Log("Esta mojado");
             }
-            else if(!hayLuz && datoSonido == 0 && datoFuego == 0 && datoBoton == 0)   // Oscuridad
-            {
-                ActivarMarcoSombra();
-                petalosAguaSOMBRA[0].DOFade(1f,duration);
-                pistilloAguaSOMBRA[0].DOFade(1f,duration);
-            }
-            Debug.Log("Esta mojado");
         }
         else
         {
@@ -337,8 +576,10 @@ public class ArduinoData : MonoBehaviour
                 pistilloAguaLUZ[0].DOFade(0f, duration);
                 petalosAguaSOMBRA[0].DOFade(0f, duration);
                 pistilloAguaSOMBRA[0].DOFade(0f, duration);
+                audios[1].DOFade(0f, 1f);
+                activo5 = false;
+                interacciones--;
                 Debug.Log("No ta mojao");
-                Desactivar();
             }
         }
     }
@@ -347,20 +588,29 @@ public class ArduinoData : MonoBehaviour
     {
         if (datoBoton == 1)
         {
-            activo6 = true;
-            if(hayLuz && datoSonido == 0 && datoSensorHumedad == 0 && datoFuego == 0)   // 1 sensor activado
+            if (!interaccionMultiple)
             {
-                //ActivarMarcoLuz();
-                petalosTierraLUZ[0].DOFade(1f,duration);
-                pistilloTierraLUZ[0].DOFade(1f,duration);
+                audios[1].DOFade(1f, 1f);
+                if (!activo6)
+                {
+                    interacciones++;
+                    activo6 = true;
+                }
+
+                if (hayLuz && datoSonido == 0 && datoSensorHumedad == 0 && datoFuego == 0)   // 1 sensor activado
+                {
+                    //ActivarMarcoLuz();
+                    petalosTierraLUZ[0].DOFade(1f, duration);
+                    pistilloTierraLUZ[0].DOFade(1f, duration);
+                }
+                else if (!hayLuz && datoSonido == 0 && datoSensorHumedad == 0 && datoFuego == 0) // Oscuridad
+                {
+                    //ActivarMarcoSombra();
+                    petalosTierraSOMBRA[0].DOFade(1f, duration);
+                    pistilloTierraSOMBRA[0].DOFade(1f, duration);
+                }
+                Debug.Log("Hay tacto");
             }
-            else if(!hayLuz && datoSonido == 0 && datoSensorHumedad == 0 && datoFuego == 0) // Oscuridad
-            {
-                //ActivarMarcoSombra();
-                petalosTierraSOMBRA[0].DOFade(1f,duration);
-                pistilloTierraSOMBRA[0].DOFade(1f, duration);
-            }
-            Debug.Log("Hay tacto");
         }
 
         else
@@ -371,8 +621,10 @@ public class ArduinoData : MonoBehaviour
                 pistilloTierraLUZ[0].DOFade(0f, duration);
                 petalosTierraSOMBRA[0].DOFade(0f, duration);
                 pistilloTierraSOMBRA[0].DOFade(0f, duration);
+                audios[1].DOFade(0f, 1f);
+                activo6 = false;
+                interacciones--;
                 Debug.Log("No hay tacto");
-                Desactivar();
             }
         }
 
@@ -388,20 +640,82 @@ public class ArduinoData : MonoBehaviour
         petaloMarcoSombra.DOFade(1f, duration);
         pistilloMarcoSombra.DOFade(1f, duration);
     }
-    void Desactivar()
+
+    IEnumerator CambioLuz()
     {
-        //petaloMarcoLUZ.DOFade(0f, duration);
-        //pistilloMarcoLUZ.DOFade(0f, duration);
-        //petaloMarcoSombra.DOFade(0f, duration);
-        //pistilloMarcoSombra.DOFade(0f, duration);
-        activo1 = false;
-        activo2 = false;
-        activo3 = false;
-        activo4 = false;
-        activo5 = false;
-        activo6 = false;
-        activo7 = false;
-        activo8 = false;
-        activo9 = false;
+        anim.Play("Base Layer.FlorEncoje");
+        yield return new WaitForSeconds(duration);
+
+        if (luces[0].activeSelf == false) // activa todos los GameObjects de luz de vuelta.
+        {
+            foreach (GameObject go in luces)
+            {
+                go.SetActive(true);
+            }
+        }
+
+        if (sombras[0].activeSelf == true)  // Desactiva los gameobjects de las sombras
+        {
+            foreach (GameObject go in sombras)
+            {
+                go.SetActive(false);
+            }
+        }
+        anim.Play("Base Layer.FlorCrece");
+        yield return new WaitForSeconds(duration);
+
+        hayLuz = true;
+        Debug.Log(hayLuz);
+        yield break;
+    }
+
+    IEnumerator CambioSombra()
+    {
+        anim.Play("Base Layer.FlorEncoje");
+        yield return new WaitForSeconds(duration);
+
+        if (sombras[0].activeSelf == false) // activa todos los GameObjects de luz de vuelta.
+        {
+            foreach (GameObject go in sombras)
+            {
+                go.SetActive(true);
+            }
+        }
+
+        if (luces[0].activeSelf == true)
+        {
+            foreach (GameObject go in luces)
+            {
+                go.SetActive(false);
+            }
+        }
+        anim.Play("Base Layer.FlorCrece");
+        yield return new WaitForSeconds(duration);
+
+        hayLuz = false;
+        Debug.Log(hayLuz);
+        yield break;
+    }
+
+    IEnumerator ActivarTodo()
+    {
+        yield return new WaitForSeconds(duration);
+        if (sombras[0].activeSelf == false) // activa todos los GameObjects de luz de vuelta.
+        {
+            foreach (GameObject go in sombras)
+            {
+                go.SetActive(true);
+            }
+        }
+        if (luces[0].activeSelf == false) // activa todos los GameObjects de luz de vuelta.
+        {
+            foreach (GameObject go in luces)
+            {
+                go.SetActive(true);
+            }
+        }
+        yield return new WaitForEndOfFrame();
+
+        yield break;
     }
 }
